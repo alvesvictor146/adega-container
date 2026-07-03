@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adega Container - A Balada da Zona Leste</title>
+    <meta name="description" content="A melhor adega e bar da Zona Leste de São Paulo. Venha curtir com as melhores bebidas no Adega Container!" />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <!-- Phosphor Icons for easy UI icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <!-- Custom CSS -->
+    <script type="module" crossorigin src="/adega-container/assets/index-DAlfY-n_.js"></script>
+    <link rel="stylesheet" crossorigin href="/adega-container/assets/index-BlL3FHkM.css">
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="logo">ADEGA <span>CONTAINER</span></div>
+      <nav>
+        <a href="#hero">Início</a>
+        <a href="#destaques">Bebidas</a>
+        <a href="#informacoes">Informações</a>
+        <a href="#localizacao">Localização</a>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+      <video autoplay loop muted playsinline class="hero-video">
+        <source src="/adega-container/People_interacting_having_fun_1080p_202607031218.mp4" type="video/mp4">
+      </video>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1>BEM-VINDO À <span class="text-highlight">ADEGA CONTAINER</span></h1>
+        <p>A balada noturna mais quente da Zona Leste de SP.</p>
+        <a href="#informacoes" class="btn-primary">Conheça Nosso Espaço</a>
+      </div>
+    </section>
+
+    <!-- Carousel Section for Drinks -->
+    <section id="destaques" class="carousel-section">
+      <div class="section-title">
+        <h2>NOSSAS <span class="text-highlight">BEBIDAS</span></h2>
+        <p>As melhores marcas para a sua noite ser inesquecível.</p>
+      </div>
+      
+      <div class="carousel-container">
+        <div class="carousel-track" id="carousel-track">
+          <!-- The user images will go here -->
+          <!-- User Images -->
+          <div class="carousel-slide">
+            <img src="/adega-container/adega_1.jpg" alt="Adega 1" />
+          </div>
+          <div class="carousel-slide">
+            <img src="/adega-container/adega_2.jpg" alt="Adega 2" />
+          </div>
+          <div class="carousel-slide">
+            <img src="/adega-container/adega_3.jpg" alt="Adega 3" />
+          </div>
+          <div class="carousel-slide">
+            <img src="/adega-container/adega_4.jpg" alt="Adega 4" />
+          </div>
+          <div class="carousel-slide">
+            <img src="/adega-container/adega_5.jpg" alt="Adega 5" />
+          </div>
+          <div class="carousel-slide">
+            <img src="/adega-container/adega_6.jpg" alt="Adega 6" />
+          </div>
+          <div class="carousel-slide">
+            <img src="/adega-container/adega_7.jpg" alt="Adega 7" />
+          </div>
+          <div class="carousel-slide">
+            <img src="/adega-container/adega_8.jpg" alt="Adega 8" />
+          </div>
+        </div>
+        
+        <button class="carousel-btn prev" id="carousel-prev"><i class="ph ph-caret-left"></i></button>
+        <button class="carousel-btn next" id="carousel-next"><i class="ph ph-caret-right"></i></button>
+      </div>
+    </section>
+
+    <!-- Information & Hours -->
+    <section id="informacoes" class="info-section">
+      <div class="info-container">
+        <div class="info-card">
+          <i class="ph ph-clock info-icon"></i>
+          <h3>HORÁRIO DE FUNCIONAMENTO</h3>
+          <ul class="hours-list">
+            <li><span>Segunda a Quarta</span> <span>10:00 - 23:00</span></li>
+            <li><span class="text-highlight">Quinta a Domingo</span> <span class="text-highlight">10:00 - 01:00</span></li>
+          </ul>
+        </div>
+        
+        <div class="info-card">
+          <i class="ph ph-instagram-logo info-icon"></i>
+          <h3>REDES SOCIAIS</h3>
+          <p>Siga-nos para ficar por dentro das novidades e eventos.</p>
+          <a href="https://instagram.com/adega_container" target="_blank" class="social-link">@adega_container</a>
+        </div>
+        
+        <div class="info-card">
+          <i class="ph ph-whatsapp-logo info-icon"></i>
+          <h3>CONTATO</h3>
+          <p>Faça seu pedido ou reserve uma mesa.</p>
+          <a href="https://wa.me/5511976019795" target="_blank" class="contact-link">(11) 97601-9795</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Location & Map -->
+    <section id="localizacao" class="map-section">
+      <div class="section-title">
+        <h2>NOSSA <span class="text-highlight">LOCALIZAÇÃO</span></h2>
+        <p>Rua Alfredo Ricci 177 - Zona Leste, São Paulo, SP</p>
+      </div>
+      <div class="map-container">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.058319688463!2d-46.505085!3d-23.530419!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDMxJzQ5LjUiUyA0NsKwMzAnMTguMyJX!5e0!3m2!1spt-BR!2sbr!4v1680000000000!5m2!1spt-BR!2sbr" 
+          width="100%" 
+          height="100%" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2026 Adega Container. Todos os direitos reservados.</p>
+    </footer>
+
+  </body>
+</html>
