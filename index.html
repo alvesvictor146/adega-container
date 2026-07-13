@@ -24,7 +24,8 @@
       <div class="logo">ADEGA <span>CONTAINER</span></div>
       <nav>
         <a href="#hero">Início</a>
-        <a href="#destaques">Bebidas</a>
+        <a href="#novidades">Novidades</a>
+        <a href="#experiencias">Experiências</a>
         <a href="#informacoes">Informações</a>
         <a href="#localizacao">Localização</a>
       </nav>
@@ -43,40 +44,101 @@
       </div>
     </section>
 
-    <!-- Carousel Section for Drinks -->
-    <section id="destaques" class="carousel-section">
+    <!-- Produtos em Destaque -->
+    <section id="novidades" class="grid-section">
       <div class="section-title">
-        <h2>NOSSAS <span class="text-highlight">BEBIDAS</span></h2>
-        <p>As melhores marcas para a sua noite ser inesquecível.</p>
+        <h2>NOSSAS <span class="text-highlight">NOVIDADES</span></h2>
+        <p>Confira os últimos lançamentos que chegaram na adega.</p>
       </div>
       
-      <div class="carousel-container">
+      <div class="cards-grid">
+        <div class="product-card">
+          <img src="/item1.jpeg" alt="Bombay Sapphire" />
+          <div class="product-info">
+            <h3>Bombay Sapphire 750ml</h3>
+            <p>Sofisticação e sabor em cada dose!</p>
+            <p class="product-price">De <s>R$ 119,00</s> por apenas<br><span class="price-highlight">R$ 99,99!</span></p>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="/item2.jpeg" alt="Bombay Bramble" />
+          <div class="product-info">
+            <h3>Bombay Bramble 700ml</h3>
+            <p>O equilíbrio perfeito entre o clássico gin Bombay e o sabor natural de amora e framboesa. Refrescante, sofisticado e perfeito para drinks incríveis!</p>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="/item3.jpeg" alt="Linha Tanqueray" />
+          <div class="product-info">
+            <h3>Linha Tanqueray</h3>
+            <p><strong>Sabor para todos os estilos</strong><br><br>Do clássico London Dry às versões frutadas Royale, Sevilla, Rangpur Lime e Bossa Nova, a linha Tanqueray combina qualidade, aroma e refrescância para transformar qualquer drink em uma experiência especial.</p>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="/item4.jpeg" alt="Ballena Original Cream Tequila" />
+          <div class="product-info">
+            <h3>Ballena Original Cream Tequila</h3>
+            <p>Sabores disponíveis:<br>• Morango com Tequila<br>• Coco<br>• Chocolate Caramelo<br><br><strong>Beba bem gelada e surpreenda seu paladar!</strong></p>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="/item5.jpeg" alt="Império Ultra" />
+          <div class="product-info">
+            <h3>Império Ultra 🍺</h3>
+            <p>Leve, refrescante e perfeita para qualquer momento. A cerveja puro malte com apenas 3% de álcool entrega sabor na medida certa e ainda é sem glúten.</p>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="/item6.jpeg" alt="Aperol" />
+          <div class="product-info">
+            <h3>Aperol</h3>
+            <p><strong>O clássico aperitivo italiano 🇮🇹🍊</strong><br><br>Com seu sabor único e equilibrado entre o doce e o amargo, o Aperol é a escolha perfeita para preparar o famoso Aperol Spritz ou criar drinks refrescantes para qualquer ocasião.</p>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="/item7.jpeg" alt="Rosé Piscine" />
+          <div class="product-info">
+            <h3>Rosé Piscine</h3>
+            <p><strong>Refrescância em cada taça 🍷❄️</strong><br><br>Leve, elegante e irresistível, o Rosé Piscine foi feito para ser apreciado bem gelado. Com notas frutadas e um sabor suave, é a escolha perfeita para dias quentes, happy hour ou momentos especiais.</p>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="/item8.jpeg" alt="Absolut Vodka" />
+          <div class="product-info">
+            <h3>Absolut Vodka</h3>
+            <p><strong>Qualidade que faz a diferença 🍸</strong><br><br>Produzida na Suécia com ingredientes selecionados, a Absolut é referência mundial em vodka premium. Perfeita para ser apreciada pura, com gelo ou no preparo dos seus drinks favoritos.<br><br>✨ Disponível nas versões:<br>• Original<br>• Citron (Limão)<br>• Vanilia (Baunilha)</p>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="/item9.png" alt="Heineken Long Neck" />
+          <div class="product-info">
+            <h3>Heineken Long Neck</h3>
+            <p><strong>A clássica puro malte 🍻</strong><br><br>Estupidamente gelada e com aquele amargor na medida certa que todo mundo adora. Acompanha super bem os encontros e é perfeita para brindar os melhores momentos.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Carousel Section for Experiences (Videos) -->
+    <section id="experiencias" class="carousel-section full-width">
+      <div class="section-title">
+        <h2>NOSSAS <span class="text-highlight">EXPERIÊNCIAS</span></h2>
+        <p>Viva os melhores momentos com a gente.</p>
+      </div>
+      
+      <div class="carousel-container full-width">
+        <div class="exp-overlay-text">
+          <h3>VARIEDADE EM DOSES, CERVEJAS E NARGUILES</h3>
+        </div>
         <div class="carousel-track" id="carousel-track">
-          <!-- The user images will go here -->
-          <!-- User Images -->
           <div class="carousel-slide">
-            <img src="/adega_1.jpg" alt="Adega 1" />
+            <video src="/exp1.mp4" class="exp-video" muted playsinline></video>
           </div>
           <div class="carousel-slide">
-            <img src="/adega_2.jpg" alt="Adega 2" />
+            <video src="/exp2.mp4" class="exp-video" muted playsinline></video>
           </div>
           <div class="carousel-slide">
-            <img src="/adega_3.jpg" alt="Adega 3" />
-          </div>
-          <div class="carousel-slide">
-            <img src="/adega_4.jpg" alt="Adega 4" />
-          </div>
-          <div class="carousel-slide">
-            <img src="/adega_5.jpg" alt="Adega 5" />
-          </div>
-          <div class="carousel-slide">
-            <img src="/adega_6.jpg" alt="Adega 6" />
-          </div>
-          <div class="carousel-slide">
-            <img src="/adega_7.jpg" alt="Adega 7" />
-          </div>
-          <div class="carousel-slide">
-            <img src="/adega_8.jpg" alt="Adega 8" />
+            <video src="/exp3.mp4" class="exp-video" muted playsinline></video>
           </div>
         </div>
         
@@ -117,11 +179,11 @@
     <section id="localizacao" class="map-section">
       <div class="section-title">
         <h2>NOSSA <span class="text-highlight">LOCALIZAÇÃO</span></h2>
-        <p>Rua Alfredo Ricci 177 - Zona Leste, São Paulo, SP</p>
+        <p>Rua Alfredo Ricci, 177 - Itaquera, São Paulo - SP, 08253-010</p>
       </div>
       <div class="map-container">
         <iframe 
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.058319688463!2d-46.505085!3d-23.530419!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDMxJzQ5LjUiUyA0NsKwMzAnMTguMyJX!5e0!3m2!1spt-BR!2sbr!4v1680000000000!5m2!1spt-BR!2sbr" 
+          src="https://maps.google.com/maps?q=Rua%20Alfredo%20Ricci,%20177%20-%20Itaquera,%20S%C3%A3o%20Paulo%20-%20SP,%2008253-010&t=&z=16&ie=UTF8&iwloc=&output=embed" 
           width="100%" 
           height="100%" 
           style="border:0;" 

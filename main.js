@@ -1,36 +1,72 @@
 // Carousel Logic
-document.addEventListener('DOMContentLoaded', () => {
-  const track = document.getElementById('carousel-track');
+function setupCarousel(trackId, prevBtnId, nextBtnId) {
+  const track = document.getElementById(trackId);
+  if (!track) return;
   const slides = Array.from(track.children);
-  const nextButton = document.getElementById('carousel-next');
-  const prevButton = document.getElementById('carousel-prev');
+  const nextButton = document.getElementById(nextBtnId);
+  const prevButton = document.getElementById(prevBtnId);
+  
+  if (slides.length === 0) return;
 
   let currentIndex = 0;
 
-  // Since we only have 2 slides for now, simple toggle is fine, but let's make it scalable
+  const hasVideos = slides.some(slide => slide.querySelector('video'));
+
   function updateCarousel() {
+    if (slides.length === 0) return;
     const slideWidth = slides[0].getBoundingClientRect().width;
     track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+    
+    if (hasVideos) {
+      slides.forEach((slide, index) => {
+        const vid = slide.querySelector('video');
+        if (vid) {
+          if (index === currentIndex) {
+            vid.currentTime = 0;
+            vid.play().catch(e => console.log('Autoplay prevented', e));
+          } else {
+            vid.pause();
+          }
+        }
+      });
+    }
   }
 
-  nextButton.addEventListener('click', () => {
+  function goNext() {
     currentIndex = (currentIndex + 1) % slides.length;
     updateCarousel();
-  });
+  }
 
-  prevButton.addEventListener('click', () => {
-    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-    updateCarousel();
-  });
+  if (nextButton) {
+    nextButton.addEventListener('click', goNext);
+  }
+
+  if (prevButton) {
+    prevButton.addEventListener('click', () => {
+      currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+      updateCarousel();
+    });
+  }
 
   // Handle window resize
   window.addEventListener('resize', updateCarousel);
   
-  // Auto play carousel
-  setInterval(() => {
-    currentIndex = (currentIndex + 1) % slides.length;
+  if (hasVideos) {
+    slides.forEach(slide => {
+      const vid = slide.querySelector('video');
+      if (vid) {
+        vid.addEventListener('ended', goNext);
+      }
+    });
     updateCarousel();
-  }, 5000);
+  } else if (slides.length > 1) {
+    setInterval(goNext, 5000);
+  }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  setupCarousel('carousel-track', 'carousel-prev', 'carousel-next');
+  setupCarousel('promocoes-track', 'promocoes-prev', 'promocoes-next');
 });
 
 // Simple scroll effect for navbar
