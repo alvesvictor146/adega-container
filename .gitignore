@@ -22,3 +22,15 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+*.zip
+powershell.cmd
+
+# Root media duplicates (kept in public/ folder)
+/*.jpeg
+/*.jpg
+/*.png
+/*.mp4
+/*.svg
+/.htaccess
+/robots.txt
+/sitemap.xml
